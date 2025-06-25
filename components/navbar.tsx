@@ -31,7 +31,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex md:justify-center md:flex-1 space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -45,13 +45,6 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-
-          {/* Chat Button */}
-          <div className="hidden md:block">
-            <Button asChild>
-              <Link href="/chat">Chat with AI</Link>
-            </Button>
-          </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
@@ -84,11 +77,6 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button asChild className="w-full">
-              <Link href="/chat" onClick={() => setMobileMenuOpen(false)}>
-                Chat with AI
-              </Link>
-            </Button>
           </div>
         </div>
       )}

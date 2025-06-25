@@ -159,7 +159,7 @@ export default function AboutPage() {
         </p>
         <div className="flex justify-center gap-4">
           <Button asChild size="lg">
-            <Link href="/contact">Become a Member</Link>
+            <Link href="https://forms.gle/68rU7LbXKVSVjT2s5">Become a Member</Link>
           </Button>
           <Button asChild variant="outline" size="lg">
             <Link href="/events">Explore Our Events</Link>

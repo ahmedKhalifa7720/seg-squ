@@ -26,13 +26,12 @@ export default function EventsPage() {
                 Details for our annual flagship event are still being planned. Stay tuned for updates on keynote
                 speakers, workshops, and networking opportunities.
               </p>
-              <Button asChild size="lg">
-                <Link href="/contact">Stay Tuned</Link>
-              </Button>
+              {/* Remove the Button and replace with bolded text */}
+              <p className="text-lg font-bold text-blue-700">Stay Tuned...</p>
             </div>
             <div className="h-64 md:h-auto">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="\images\Annual Geophysics Conference.jpeg" // Updated image path
                 alt="Annual Geophysics Conference"
                 className="w-full h-full object-cover"
               />
@@ -88,17 +87,7 @@ export default function EventsPage() {
       </section>
 
       {/* Event Calendar */}
-      <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-6">Event Calendar</h2>
-        <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-          <p className="text-gray-700 mb-4 text-center">
-            View our complete event calendar to stay updated with all our activities.
-          </p>
-          <div className="h-96 bg-gray-100 rounded-lg flex items-center justify-center">
-            <p className="text-gray-500">Interactive Calendar Coming Soon</p>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Propose an Event */}
       <section className="bg-blue-50 p-8 rounded-lg">

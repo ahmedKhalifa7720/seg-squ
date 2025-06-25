@@ -232,7 +232,7 @@ export default function ContactPage() {
         </p>
         <div className="flex justify-center space-x-4">
           <Button variant="outline" asChild>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/seg.squ/" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
           </Button>
@@ -241,11 +241,7 @@ export default function ContactPage() {
               LinkedIn
             </a>
           </Button>
-          <Button variant="outline" asChild>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              Facebook
-            </a>
-          </Button>
+          
         </div>
       </section>
     </div>

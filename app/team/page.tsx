@@ -84,17 +84,7 @@ export default function TeamPage() {
             linkedin="https://linkedin.com"
           />
         </div>
-        <div className="mt-8 bg-blue-50 p-6 rounded-lg">
-          <h3 className="text-lg font-semibold mb-2">Open Position</h3>
-          <p className="text-gray-700 mb-4">
-            <strong>Media Officer:</strong> We are currently seeking a dedicated student to join our team as Media
-            Officer. This role involves managing our social media presence, creating content, and promoting chapter
-            activities.
-          </p>
-          <Button asChild variant="outline">
-            <Link href="/contact">Apply for Media Officer Position</Link>
-          </Button>
-        </div>
+        
       </section>
 
       {/* Join the Team */}
@@ -113,13 +103,11 @@ export default function TeamPage() {
   )
 }
 
-function TeamMemberCard({ name, position, image, bio, email, personalEmail, linkedin }) {
-  // Use personal email if available, otherwise use SQU email
+function TeamMemberCard({ name, position, bio, email, personalEmail, linkedin }) {
   const contactEmail = personalEmail || email
 
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
-      <img src={image || "/placeholder.svg"} alt={name} className="w-full h-64 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-1">{name}</h3>
         <p className="text-blue-700 font-medium mb-3">{position}</p>
@@ -142,3 +130,15 @@ function TeamMemberCard({ name, position, image, bio, email, personalEmail, link
     </div>
   )
 }
+
+// In the Executive Committee section, add Khalid and remove the Open Position section:
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <TeamMemberCard
+    name="Khalid AL-Ali"
+    position="Media Officer"
+    bio="Manage the chapter's social media accounts and digital brand. Design promotional materials for events and announcements."
+    email=""
+    personalEmail=""
+    linkedin="https://linkedin.com"
+  />
+</div>

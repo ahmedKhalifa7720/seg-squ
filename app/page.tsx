@@ -112,7 +112,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">What We Offer</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
             <FeatureCard
               icon={<Calendar className="h-10 w-10 text-blue-700" />}
               title="Events"
@@ -131,12 +131,7 @@ export default function Home() {
               description="Access to educational materials, research papers, and learning opportunities"
               link="/resources"
             />
-            <FeatureCard
-              icon={<MessageSquare className="h-10 w-10 text-blue-700" />}
-              title="AI Assistant"
-              description="Get instant answers to your questions about geophysics and our chapter"
-              link="/chat"
-            />
+            {/* Removed AI Assistant Feature Card */}
           </div>
         </div>
       </section>
@@ -155,49 +150,27 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <EventCard
               title="Geophysical Data Analysis Workshop"
-              date="June 15, 2025"
-              location="Engineering Building, SQU"
-              image="/placeholder.svg?height=200&width=300"
+              date="Septemper, 2025"
+              location="SQU"
+              image="\images\WS.jpeg"
             />
             <EventCard
               title="Industry Talk: Future of Seismic Exploration"
-              date="July 2, 2025"
+              date="Septemper, 2025"
               location="Virtual Event"
-              image="/placeholder.svg?height=200&width=300"
+              image="\images\talk.jpeg"
             />
             <EventCard
               title="Field Trip: Geological Survey"
-              date="July 20, 2025"
-              location="Al Jabal Al Akhdar"
-              image="/placeholder.svg?height=200&width=300"
+              date="November, 2025"
+              location="Adam"
+              image="\images\ERT survey.jpg"
             />
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">What Our Members Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <TestimonialCard
-              quote="Being part of SEG SQU has opened numerous opportunities for me in the field of geophysics."
-              name="Ahmed Al-Balushi"
-              role="Chapter President"
-            />
-            <TestimonialCard
-              quote="The workshops and networking events organized by the chapter have significantly enhanced my technical skills."
-              name="Fatima Al-Harthy"
-              role="Student Member"
-            />
-            <TestimonialCard
-              quote="SEG SQU provides an excellent platform to bridge the gap between academic learning and industry requirements."
-              name="Dr. Mohammed Al-Kindi"
-              role="Faculty Advisor"
-            />
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA Section */}
       <section className="py-16 bg-blue-900 text-white relative overflow-hidden">
@@ -251,9 +224,7 @@ export default function Home() {
             <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 hover:text-blue-900">
               <Link href="https://forms.gle/68rU7LbXKVSVjT2s5">Join Now</Link>
             </Button>
-            <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50 hover:text-blue-900">
-              <Link href="/chat">Chat with AI Assistant</Link>
-            </Button>
+            
           </div>
         </div>
       </section>

@@ -10,18 +10,18 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/images/seg-squ-logo.png"
+                src="/images/mark.png"
                 alt="SEG SQU Student Chapter"
-                className="h-8 w-auto mr-3 brightness-0 invert"
+                className="h-8 w-auto mr-3"
               />
             </div>
             <p className="text-gray-300 mb-4">
               The Society of Exploration Geophysicists Student Chapter at Sultan Qaboos University.
             </p>
+            
             <div className="flex space-x-4">
-              <SocialIcon icon={<Facebook size={18} />} href="https://facebook.com" />
-              <SocialIcon icon={<Twitter size={18} />} href="https://twitter.com" />
-              <SocialIcon icon={<Instagram size={18} />} href="https://instagram.com" />
+              
+              <SocialIcon icon={<Instagram size={18} />} href="https://www.instagram.com/seg.squ/" />
               <SocialIcon icon={<Linkedin size={18} />} href="https://linkedin.com" />
             </div>
           </div>
@@ -59,7 +59,7 @@ export default function Footer() {
               <p className="flex items-center mt-2">
                 <Mail size={16} className="mr-2" />
                 <a href="mailto:seg.squ@example.com" className="hover:text-blue-400">
-                  seg.squ@example.com
+                seg.squ@outlook.com
                 </a>
               </p>
             </address>
