@@ -149,7 +149,6 @@ export default function ContactPage() {
                       <SelectItem value="events">Events</SelectItem>
                       <SelectItem value="resources">Resources</SelectItem>
                       <SelectItem value="collaboration">Collaboration</SelectItem>
-                      <SelectItem value="media-officer">Media Officer Application</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -198,7 +197,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           <FAQCard
             question="How can I become a member?"
-            answer="To become a member, simply fill out the contact form above with your inquiry type set to 'Membership' or attend one of our upcoming events when they are announced."
+            answer="To become a member, simply click Join button in home page and fill out the form or attend one of our upcoming events when they are announced."
           />
           <FAQCard
             question="Are events open to non-members?"
@@ -212,14 +211,8 @@ export default function ContactPage() {
             question="Can I join the executive committee?"
             answer="Yes! We hold elections annually in May. Keep an eye on our announcements for nomination periods and requirements."
           />
-          <FAQCard
-            question="How do I apply for the Media Officer position?"
-            answer="Select 'Media Officer Application' in the inquiry type above and tell us about your experience and interest in managing our digital presence."
-          />
-          <FAQCard
-            question="When will events start?"
-            answer="As we are re-establishing the chapter, events will be announced once our committee is fully formed and we have official recognition from SQU and SEG."
-          />
+          
+          
         </div>
       </section>
 

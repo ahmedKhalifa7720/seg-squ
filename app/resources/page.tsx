@@ -45,18 +45,18 @@ export default function ResourcesPage() {
             <h3 className="text-xl font-semibold mb-4">E-Books & Guides</h3>
             <ul className="space-y-3">
               <LearningMaterialItem
-                title="Fundamentals of Exploration Geophysics"
+                title="Fundamentals of Geophysics"
                 type="E-Book"
-                size="15 MB"
-                link="#"
+                size="6 MB"
+                link="https://eclass.uoa.gr/modules/document/file.php/GEOL210/%CE%95%CE%9A%CE%A0%CE%91%CE%99%CE%94%CE%95%CE%A5%CE%A4%CE%99%CE%9A%CE%91%20%CE%92%CE%9F%CE%97%CE%98%CE%97%CE%9C%CE%91%CE%A4%CE%91%20%CE%9A%CE%91%CE%99%20%CE%92%CE%99%CE%92%CE%9B%CE%99%CE%91/%CE%98%CE%B5%CE%BC%CE%AD%CE%BB%CE%B9%CE%B1_%CF%84%CE%B7%CF%82_%CE%93%CE%B5%CF%89%CF%86%CF%85%CF%83%CE%B9%CE%BA%CE%AE%CF%82.pdf"
               />
-              <LearningMaterialItem title="Seismic Data Acquisition and Processing" type="Guide" size="8 MB" link="#" />
-              <LearningMaterialItem title="Well Log Analysis for Geophysicists" type="E-Book" size="12 MB" link="#" />
+              <LearningMaterialItem title="Seismic Data Acquisition and Processing" type="E-Book" size="2 MB" link="https://research-portal.uu.nl/files/90925567/RoyChowdhury2020_ReferenceWorkEntry_SeismicDataAcquisitionAndProce.pdf" />
+              <LearningMaterialItem title="Basics of Geophysical Well Logs" type="PDF" size="5 MB" link="https://moodle2.units.it/pluginfile.php/438108/mod_resource/content/1/Basics%20of%20Geophysical%20well%20logs_Introduction.pdf" />
               <LearningMaterialItem
-                title="Introduction to Potential Field Methods"
-                type="Guide"
-                size="10 MB"
-                link="#"
+                title="An Introduction to Geophysical Exploration"
+                type="E-book"
+                size="8 MB"
+                link="https://drive.google.com/uc?export=download&id=1L5P1hgZ3beW-N8JhE1B2sQCCrbpHaFbl"
               />
             </ul>
           </div>
@@ -65,23 +65,23 @@ export default function ResourcesPage() {
             <ul className="space-y-3">
               <LearningMaterialItem
                 title="Seismic Interpretation Basics"
-                type="Video Series"
-                size="5 videos"
-                link="#"
+                type="Video"
+                size="30 min"
+                link="https://youtu.be/Y29a6YLnUO4?si=w12pknGlDysCdgvVhttps://youtu.be/Y29a6YLnUO4?si=w12pknGlDysCdgvVhttps://youtu.be/Y29a6YLnUO4?si=w12pknGlDysCdgvV"
               />
               <LearningMaterialItem
                 title="Petrel Software Tutorial"
-                type="Workshop Recording"
-                size="2 hours"
-                link="#"
+                type="Youtube"
+                size="Playlist"
+                link="https://youtube.com/playlist?list=PLCilepHLSxDAJMAz97Cioa8uipojxspbY&si=CkT6TT4u6mRgsw09"
               />
               <LearningMaterialItem
-                title="Python for Geophysical Data Analysis"
-                type="Tutorial Series"
-                size="8 videos"
-                link="#"
+                title="Python for Geoscientists"
+                type="Video Tutorial"
+                size="22 min"
+                link="https://youtu.be/Cj4niGhMeo0?si=vsou--hrcmlOa-kt"
               />
-              <LearningMaterialItem title="Field Methods in Geophysics" type="Documentary" size="45 minutes" link="#" />
+              <LearningMaterialItem title="Field Methods in Geophysics" type="Video" size="3 min" link="https://youtu.be/KZ3gQsc0wpk?si=bkYbPHmJfFAph6fk" />
             </ul>
           </div>
         </div>
@@ -180,7 +180,7 @@ function LearningMaterialItem({ title, type, size, link }) {
         </p>
       </div>
       <Button variant="ghost" size="sm" asChild className="text-blue-700">
-        <a href={"https://drive.google.com/drive/u/3/folders/1qbKouCjIevXcWrelfWPDS0DJemXdDASe"} target="_blank" rel="noopener noreferrer">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           View
         </a>
       </Button>
