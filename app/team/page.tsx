@@ -36,7 +36,7 @@ export default function TeamPage() {
             bio="Supports and steps in for the President when needed. Monitors progress, follows up on tasks, and facilitates communication between officers."
             email="s135440@student.squ.edu.om"
             personalEmail="alfaisalalwaaili33@gmail.com"
-            linkedin="https://linkedin.com"
+            linkedin="https://www.linkedin.com/in/alfaisal-alwaaili-88039a294/"
           />
           <TeamMemberCard
             name="Abdulaziz ALBUSAIDI"
