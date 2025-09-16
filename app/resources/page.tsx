@@ -1,6 +1,23 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Download, ExternalLink, BookOpen, FileText, Video, Database } from "lucide-react"
+import { Download, ExternalLink, BookOpen, FileText, Video, Database, Folder } from "lucide-react"
+
+function CourseCard({ title, link = "#" }) {
+  return (
+    <a 
+      href={link} 
+      target="_blank"
+      rel="noopener noreferrer"
+      className="bg-white rounded-lg shadow-md border border-gray-100 p-4 hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center cursor-pointer"
+    >
+      <div className="bg-blue-50 p-3 rounded-full mb-3">
+        <Folder className="h-8 w-8 text-blue-600" />
+      </div>
+      <h3 className="font-medium text-gray-800">{title}</h3>
+    </a>
+  )
+}
+
 
 export default function ResourcesPage() {
   return (
@@ -10,6 +27,76 @@ export default function ResourcesPage() {
     
       {/* Featured Resources */}
       
+      {/* Academic Plan and Descriptions */}
+      <section className="mb-16">
+        <h2 className="text-3xl font-bold mb-6">Academic Plan and Descriptions</h2>
+        <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+          <div className="p-6">
+            <p className="text-gray-700 mb-6">
+              Access our comprehensive academic plan and course descriptions to help guide your educational journey in geophysics.
+            </p>
+            <div className="mt-6 text-center">
+              <Button variant="outline" asChild>
+                <a 
+                  href="https://drive.google.com/drive/folders/1x6z36HeYN264r7GO2XLjeORzLL5LcUdT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FileText className="h-4 w-4 mr-2" />
+                  View Academic Plan
+                </a>
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Courses Material */}
+      <section className="mb-16">
+        <h2 className="text-3xl font-bold mb-6">Courses Material</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <CourseCard 
+            title="Applied Geophysics 1: Seismic Methods" 
+            link="https://drive.google.com/drive/folders/1JdM8j92ADWu1xA0URRLWtTftEHKcUav1?usp=drive_link"
+          />
+          <CourseCard 
+            title="Applied Geophysics 2: Electrical & Electromagnetic" 
+            link="https://drive.google.com/drive/folders/1-6AiJtYJ84QTY7jweY4EsecxvnIcZo27?usp=drive_link"
+          />
+          <CourseCard 
+            title="Seismic Data Processing" 
+            link="https://drive.google.com/drive/folders/1-CQzmlikMVtjv-HU6xDFFoHPmWriRNDj?usp=drive_link"
+          />
+          <CourseCard 
+            title="Earthquake and Society" 
+            link="https://drive.google.com/drive/folders/1WpiI8NJWLMtJPg0fF0TmJ7jRmsof4N6E?usp=drive_link"
+          />
+          <CourseCard 
+            title="Earthquakes Seismology" 
+            link="https://drive.google.com/drive/folders/1Y5bLJMOoIaJGKjkoo49hRxVctN4NQ6o-?usp=drive_link"
+          />
+          <CourseCard 
+            title="Field Geophysics" 
+            link="https://drive.google.com/drive/folders/1-IHIXGq4NOGiA1OH_Aa90xG-kTe2PKpl?usp=drive_link"
+          />
+          <CourseCard 
+            title="Fundamental of Signal Processing" 
+            link="https://drive.google.com/drive/folders/1-562nVYxYGHXo7WLESdHQ-IDexx8oqAB?usp=drive_link"
+          />
+          <CourseCard 
+            title="General Geophysics" 
+            link="https://drive.google.com/drive/folders/1-IMF3lzD4sHJKxIZFk6KeXPcCgDZgh8j?usp=drive_link"
+          />
+          <CourseCard 
+            title="Gravity & Magnetic Exploration Methods" 
+            link="https://drive.google.com/drive/folders/1-3HgAgLkf7YrGLeP8rYyDINj_C2jFMrB?usp=drive_link"
+          />
+          <CourseCard 
+            title="Principles of Geophysical Well Logging" 
+            link="https://drive.google.com/drive/folders/1-Cx27epmszz4HqhU1Td9vAhlIBy1OOoC?usp=drive_link"
+          />
+        </div>
+      </section>
 
       {/* Publications */}
       <section className="mb-16">

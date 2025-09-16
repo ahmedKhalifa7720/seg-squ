@@ -9,82 +9,139 @@ export default function TeamPage() {
 
       {/* Executive Committee */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold mb-6">Executive Committee</h2>
+        <h2 className="text-3xl font-bold mb-6">Executive Board</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <TeamMemberCard
-            name="Alfaisal Mahmood AlWaaili"
+            name="Ahmed Jaboob"
             position="President"
             image="/placeholder.svg?height=300&width=300"
             bio="Sets the chapter's vision and leads strategic planning. Represents the chapter to the university and partners while ensuring team accountability."
-            email="s135440@student.squ.edu.om"
-            personalEmail="alfaisalalwaaili33@gmail.com"
-            linkedin="https://linkedin.com"
+            email="s136338@student.squ.edu.om "
+            personalEmail="s136338@student.squ.edu.om "
+            linkedin="https://www.linkedin.com/in/ahmed-jaboob-b0357a369/"
           />
           <TeamMemberCard
-            name="Aziza Khalid AlHarthy"
+            name="Aziza Alharthi"
             position="Vice President"
             image="/placeholder.svg?height=300&width=300"
             bio="Supports and steps in for the President when needed. Monitors progress, follows up on tasks, and facilitates communication between officers."
             email="s136567@student.squ.edu.om"
             personalEmail="azizakhalidalharthy@gmail.com"
+            linkedin="https://www.linkedin.com/in/aziza-al-harthi-1978a9255/"
+          />
+          <TeamMemberCard
+            name="Al-Faisal Al-Waaili"
+            position="Vice President"
+            image="/placeholder.svg?height=300&width=300"
+            bio="Supports and steps in for the President when needed. Monitors progress, follows up on tasks, and facilitates communication between officers."
+            email="s135440@student.squ.edu.om"
+            personalEmail="alfaisalalwaaili33@gmail.com"
             linkedin="https://linkedin.com"
           />
           <TeamMemberCard
-            name="Ahmed Jaboob"
+            name="Abdulaziz ALBUSAIDI"
             position="Secretary"
             image="/placeholder.svg?height=300&width=300"
             bio="Documents meetings and maintains records. Manages internal communications, correspondence, and assists with membership and official paperwork."
-            email="seg.squ@outlook.com"
+            email=""
             personalEmail=""
             linkedin="https://linkedin.com"
           />
-          <TeamMemberCard
-            name="Muhanad Alruzaiqi"
-            position="Treasurer"
-            image="/placeholder.svg?height=300&width=300"
-            bio="Manages chapter finances and maintains transparent financial records. Prepares financial reports, develops budget plans, and supports fundraising efforts."
-            email="s145099@student.squ.edu.om"
-            personalEmail="malruzaiqi248@gmail.com"
-            linkedin="https://linkedin.com"
-          />
-          <TeamMemberCard
-            name="Abdullah Albarhi"
-            position="Resource Officer"
-            image="/placeholder.svg?height=300&width=300"
-            bio="Handles and sources technical equipment and inventory. Maintains chapter-owned tools and arranges storage, transport, or rentals as needed."
-            email="s129377@student.squ.edu.om"
-            personalEmail="aossoa14@gmail.com"
-            linkedin="https://linkedin.com"
-          />
-          <TeamMemberCard
-            name="Osama Khamis AlKalbani"
-            position="Event Officer"
-            image="/placeholder.svg?height=300&width=300"
-            bio="Plans and executes technical talks, field trips, seminars, and outreach events. Liaises with speakers and participants to ensure smooth event logistics."
-            email="s130809@student.squ.edu.om"
-            personalEmail="osamaalkalbani14@gmail.com"
-            linkedin="https://linkedin.com"
-          />
-          <TeamMemberCard
-            name="Ahmed Khalifa AlYaaribi"
-            position="Digital Systems Officer"
-            image="/placeholder.svg?height=300&width=300"
-            bio="Builds and maintains the chapter's website and digital platform. Supports online event delivery and assists with data management."
-            email="s138827@student.squ.edu.om"
-            personalEmail="ahmedy3rubi@gmail.com"
-            linkedin="https://linkedin.com"
-          />
-          <TeamMemberCard
-            name="Sultan AlJabri"
-            position="Plan & Development Officer"
-            image="/placeholder.svg?height=300&width=300"
-            bio="Identifies growth opportunities and proposes new initiatives. Develops strategic collaborations and monitors progress on long-term goals."
-            email="s132587@student.squ.edu.om"
-            personalEmail="sa4423294@gmail.com"
-            linkedin="https://linkedin.com"
-          />
+        </div>
+      </section>
+
+      {/* Committees */}
+      <section className="mb-16">
+        <h2 className="text-3xl font-bold mb-6">Committees</h2>
+        
+        {/* Projects Committee */}
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Projects Committee</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <TeamMemberCard
+              name="Al-Ghaliah Al-Shukaili"
+              position="Head"
+              image="/placeholder.svg?height=300&width=300"
+              bio="Leads the Projects Committee in planning and executing chapter projects."
+              email=""
+              personalEmail=""
+              linkedin="https://linkedin.com"
+            />
+            <TeamMemberCard
+              name="Ahmed Al-Budaie"
+              position="Deputy"
+              image="/placeholder.svg?height=300&width=300"
+              bio="Assists the Head in managing projects and coordinates team activities."
+              email=""
+              personalEmail=""
+              linkedin="https://linkedin.com"
+            />
+          </div>
         </div>
         
+        {/* Media Committee */} {/*
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Media Committee</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <TeamMemberCard
+              name="..."
+              position="Head"
+              image="/placeholder.svg?height=300&width=300"
+              bio="Leads the Media Committee in managing the chapter's social media presence and content creation."
+              email=""
+              personalEmail=""
+              linkedin=""
+            />
+          </div>
+        </div> */}
+        
+        {/* Public Relations Committee */}
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Public Relations Committee</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <TeamMemberCard
+              name="Said Ghawas"
+              position="Head"
+              image="/placeholder.svg?height=300&width=300"
+              bio="Leads the Public Relations Committee in building relationships with external organizations and promoting the chapter."
+              email=""
+              personalEmail=""
+              linkedin="https://linkedin.com"
+            />
+          </div>
+        </div>
+        
+        {/* Finance Committee */}
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Finance Committee</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <TeamMemberCard
+              name="Saifaddin Al-Hinai"
+              position="Head"
+              image="/placeholder.svg?height=300&width=300"
+              bio="Leads the Finance Committee in managing the chapter's budget and financial planning."
+              email=""
+              personalEmail=""
+              linkedin="https://linkedin.com"
+            />
+          </div>
+        </div>
+        
+        {/* Organization Committee */}
+        <div className="mb-8">
+          <h3 className="text-2xl font-bold mb-4">Organization Committee</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <TeamMemberCard
+              name="Sultan Al-Jabri"
+              position="Head"
+              image="/placeholder.svg?height=300&width=300"
+              bio="Leads the Organization Committee in coordinating events and managing logistics."
+              email="s132587@student.squ.edu.om"
+              personalEmail="sa4423294@gmail.com"
+              linkedin="https://www.linkedin.com/in/sultan-aljabri-89758830a/"
+            />
+          </div>
+        </div>
       </section>
 
       {/* Join the Team */}

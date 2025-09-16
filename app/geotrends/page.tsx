@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import Image from "next/image"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 export default function GeoTrendsPage() {
@@ -29,7 +30,7 @@ export default function GeoTrendsPage() {
               <AccordionContent>
                 <div className='flex flex-col md:flex-row gap-6 p-4'>
                   <div className="md:w-1/3">
-                    <img src="/images/FWI.jpg" alt="Full Waveform Inversion" className="w-full h-auto object-cover rounded-md" />
+                    <Image src="/images/FWI.jpg" alt="Full Waveform Inversion" width={500} height={300} className="w-full h-auto object-cover rounded-md" />
                   </div>
                   <div className='md:w-2/3 space-y-4'>
                     <div>
@@ -71,7 +72,7 @@ export default function GeoTrendsPage() {
               <AccordionContent>
                 <div className='flex flex-col md:flex-row gap-6 p-4'>
                   <div className="md:w-1/3">
-                    <img src="/images/WellTie.jpg" alt="Seismic-Well Tie Integration" className="w-full h-auto object-cover rounded-md" />
+                    <Image src="/images/WellTie.jpg" alt="Seismic-Well Tie Integration" width={500} height={300} className="w-full h-auto object-cover rounded-md" />
                   </div>
                   <div className='md:w-2/3 space-y-4'>
                     <div>
@@ -108,7 +109,7 @@ export default function GeoTrendsPage() {
               <AccordionContent>
                 <div className='flex flex-col md:flex-row gap-6 p-4'>
                   <div className="md:w-1/3">
-                    <img src="/images/4D.jpg" alt="4D Seismic Monitoring" className="w-full h-auto object-cover rounded-md" />
+                    <Image src="/images/4D.jpg" alt="4D Seismic Monitoring" width={500} height={300} className="w-full h-auto object-cover rounded-md" />
                   </div>
                   <div className='md:w-2/3 space-y-4'>
                     <div>
@@ -145,7 +146,7 @@ export default function GeoTrendsPage() {
               <AccordionContent>
                 <div className='flex flex-col md:flex-row gap-6 p-4'>
                   <div className="md:w-1/3">
-                    <img src="/images/ML.jpg" alt="AI and Machine Learning in Geophysics" className="w-full h-auto object-cover rounded-md" />
+                    <Image src="/images/ML.jpg" alt="AI and Machine Learning in Geophysics" width={500} height={300} className="w-full h-auto object-cover rounded-md" />
                   </div>
                   <div className='md:w-2/3 space-y-4'>
                     <div>
@@ -182,7 +183,7 @@ export default function GeoTrendsPage() {
               <AccordionContent>
                 <div className='flex flex-col md:flex-row gap-6 p-4'>
                   <div className="md:w-1/3">
-                    <img src="/images/EOR.png" alt="EOR Monitoring" className="w-full h-auto object-cover rounded-md" />
+                    <Image src="/images/EOR.png" alt="EOR Monitoring" width={500} height={300} className="w-full h-auto object-cover rounded-md" />
                   </div>
                   <div className='md:w-2/3 space-y-4'>
                     <div>

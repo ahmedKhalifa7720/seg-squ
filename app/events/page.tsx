@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from "next/image"
 import { Calendar, MapPin, Clock, Users } from "lucide-react"
 
 export default function EventsPage() {
@@ -7,7 +8,7 @@ export default function EventsPage() {
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold mb-8 text-center">Events & Activities</h1>
 
-      {/* Featured Event */}
+      {/* Featured Event */}{/* 
       <section className="mb-16">
         <div className="bg-blue-50 rounded-lg overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-2">
@@ -26,27 +27,106 @@ export default function EventsPage() {
                 Details for our annual flagship event are still being planned. Stay tuned for updates on keynote
                 speakers, workshops, and networking opportunities.
               </p>
-              {/* Remove the Button and replace with bolded text */}
+              {/* Remove the Button and replace with bolded text */}{/*
               <p className="text-lg font-bold text-blue-700">Stay Tuned...</p>
             </div>
             <div className="h-64 md:h-auto">
-              <img
-                src="\images\Annual Geophysics Conference.jpeg" // Updated image path
+              <Image
+                src="/images/Annual Geophysics Conference.jpeg"
                 alt="Annual Geophysics Conference"
+                width={600}
+                height={400}
                 className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Upcoming Events */}
       <section className="mb-16">
         <h2 className="text-3xl font-bold mb-6">Upcoming Events</h2>
-        <p className="text-gray-700">
-          Unfortunately, there are no upcoming events at the moment. Please stay tuned for future activities as our
-          chapter is being re-established.
-        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+            <div className="p-6">
+              <div className="bg-blue-50 text-blue-700 font-semibold px-4 py-2 rounded-md inline-block mb-3">
+                29 September 2025
+              </div>
+              <h3 className="text-xl font-bold mb-2">Openning Ceremony</h3>
+              <div className="flex items-center text-gray-600 mb-2">
+                <MapPin className="h-4 w-4 mr-2" />
+                <span>Location: To be announced</span>
+              </div>
+              <p className="text-gray-700">
+                Opening ceremony for the new academic year.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+            <div className="p-6">
+              <div className="bg-blue-50 text-blue-700 font-semibold px-4 py-2 rounded-md inline-block mb-3">
+                6–8 October 2025
+              </div>
+              <h3 className="text-xl font-bold mb-2">Majors Fair</h3>
+              <div className="flex items-center text-gray-600 mb-2">
+                <MapPin className="h-4 w-4 mr-2" />
+                <span>Location: Grand Hall</span>
+              </div>
+              <p className="text-gray-700">
+                Join us at the Majors Fair to learn about Geophysics.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+            <div className="p-6">
+              <div className="bg-blue-50 text-blue-700 font-semibold px-4 py-2 rounded-md inline-block mb-3">
+                8 October 2025
+              </div>
+              <h3 className="text-xl font-bold mb-2">QC Workshop</h3>
+              <div className="flex items-center text-gray-600 mb-2">
+                <MapPin className="h-4 w-4 mr-2" />
+                <span>Location: To be announced</span>
+              </div>
+              <p className="text-gray-700">
+                A hands-on workshop focused on quality control in geophysical data.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+            <div className="p-6">
+              <div className="bg-blue-50 text-blue-700 font-semibold px-4 py-2 rounded-md inline-block mb-3">
+                16 October 2025
+              </div>
+              <h3 className="text-xl font-bold mb-2">SEG Workshop</h3>
+              <div className="flex items-center text-gray-600 mb-2">
+                <MapPin className="h-4 w-4 mr-2" />
+                <span>Location: To be announced</span>
+              </div>
+              <p className="text-gray-700">
+                Learn about the latest advancements in geophysical exploration techniques.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-lg shadow-md border border-gray-100 overflow-hidden">
+            <div className="p-6">
+              <div className="bg-blue-50 text-blue-700 font-semibold px-4 py-2 rounded-md inline-block mb-3">
+                3 December 2025
+              </div>
+              <h3 className="text-xl font-bold mb-2">Petrophysics Workshop</h3>
+              <div className="flex items-center text-gray-600 mb-2">
+                <MapPin className="h-4 w-4 mr-2" />
+                <span>Location: To be announced</span>
+              </div>
+              <p className="text-gray-700">
+                Learn about petrophysical analysis and its applications in geophysics.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Activity Types */}
@@ -107,7 +187,12 @@ export default function EventsPage() {
 function EventCard({ title, date, time, location, image, attendees, link }) {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
-      <img src={image || "/placeholder.svg"} alt={title} className="w-full h-48 object-cover" />
+      <Image 
+        src={image || "/placeholder.svg"} 
+        alt={title} 
+        width={400} 
+        height={200} 
+        className="w-full h-48 object-cover" />
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{title}</h3>
         <div className="flex items-center text-gray-700 mb-1">

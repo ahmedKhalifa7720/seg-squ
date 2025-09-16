@@ -28,7 +28,7 @@ export default function Navbar() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <img src="/images/seg-squ-logo.png" alt="SEG SQU Student Chapter" className="h-10 w-auto" />
+            <img src="/images/segSquLogo.jpg" alt="SEG SQU Student Chapter" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

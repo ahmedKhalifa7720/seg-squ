@@ -61,22 +61,22 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <EventCard
-              title="Geophysical Data Analysis Workshop"
-              date="September, 2025"
-              location="SQU"
+              title="Opening Ceremony"
+              date="29 September 2025"
+              location="To be announced"
+              image="/images/geo-seg.png"
+            />
+            <EventCard
+              title="Majors Fair"
+              date="6-8 October 2025"
+              location="Great Hall"
+              image="/images/Fair.jpeg"
+            />
+            <EventCard
+              title="QC Workshop"
+              date="8 October 2025"
+              location="To be announced"
               image="/images/WS.jpeg"
-            />
-            <EventCard
-              title="Industry Talk: Future of Seismic Exploration"
-              date="September, 2025"
-              location="Virtual Event"
-              image="/images/talk.jpeg"
-            />
-            <EventCard
-              title="Field Trip: Geological Survey"
-              date="November, 2025"
-              location="Adam"
-              image="/images/ERT survey.jpg"
             />
           </div>
         </div>

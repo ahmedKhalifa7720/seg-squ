@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center mb-4">
               <img
-                src="/images/mark.png"
+                src="/images/segSquLogo.jpg"
                 alt="SEG SQU Student Chapter"
                 className="h-8 w-auto mr-3"
               />
